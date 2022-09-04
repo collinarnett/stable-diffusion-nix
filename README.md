@@ -2,6 +2,12 @@
 
 Quickly get up and running using Stable Diffusion with Nix flakes.
 
+## Requirements
+
+* [Nix](https://nixos.org/download.html)
+* Nvidia GPU
+* x86_64 Linux
+
 ## Setup
 
 1. Enable flakes by editing either `~/.config/nix/nix.conf` or `/etc/nix/nix.conf` and add
