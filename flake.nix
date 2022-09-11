@@ -35,7 +35,6 @@
 
       jupyterEnvironment = pkgs.jupyterlabWith {
         kernels = [iPython];
-        extraPackages = p: [p.makeWrapper];
       };
     in rec {
       jupyterWrapped = pkgs.writeShellScriptBin "jupyter" ''
