@@ -24,12 +24,12 @@
 }:
 buildPythonPackage rec {
   pname = "diffusers";
-  version = "0.2.4";
+  version = "0.3.0";
   src = fetchFromGitHub {
     owner = "huggingface";
     repo = pname;
     rev = "refs/tags/v${version}";
-    sha256 = "sha256-ZrbgGfxIh8eUXDcZdOEdg2I6ZrXjz4QpGprQVSWTjI8=";
+    sha256 = "sha256-mYm7rssVoAECHwzHmyxMHOyM/hDo3KghACmBiblsG1Q=";
   };
 
   propagatedBuildInputs = [
