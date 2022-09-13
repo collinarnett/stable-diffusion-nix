@@ -8,7 +8,7 @@ Quickly get up and running using Stable Diffusion with Nix flakes.
 ## Requirements
 
 * [Nix](https://nixos.org/download.html)
-* Nvidia GPU
+* Nvidia GPU (3.2GB VRAM)
 * x86_64 Linux
 
 ## Setup
@@ -18,7 +18,7 @@ Quickly get up and running using Stable Diffusion with Nix flakes.
 experimental-features = nix-command flakes
 ```
 
-2. Use `nix run --impure .#jupyterLab` to spawn a Jupyter Lab instance. The `--impure` flag allows nixGL to find your Nvidia drivers on non-nixos systems.
+2. Use `nix run --impure github:collinarnett/stable-diffusion-nix#jupyterLab` to spawn a Jupyter Lab instance. The `--impure` flag allows nixGL to find your Nvidia drivers on non-nixos systems.
 
 3. Replace `YOUR_TOKEN_HERE` with your HuggingFace token and make sure to accept the [License Agreement](https://huggingface.co/CompVis/stable-diffusion-v1-4) for Stable Diffusion.
 
@@ -27,4 +27,4 @@ experimental-features = nix-command flakes
 Enjoy!
 
 
-![image](https://i.imgur.com/hgbzBEw.png)
+![image](https://i.imgur.com/AKNxYNb.png)

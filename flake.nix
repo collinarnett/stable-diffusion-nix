@@ -29,7 +29,7 @@
 
       iPython = pkgs.kernels.iPythonWith {
         name = "Python-env";
-        packages = p: with p; [diffusers transformers];
+        packages = p: with p; [diffusers transformers ftfy];
         ignoreCollisions = true;
       };
 
