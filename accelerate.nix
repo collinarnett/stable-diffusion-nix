@@ -3,10 +3,9 @@
   buildPythonPackage,
   fetchFromGitHub,
   black,
-  comet-ml,
   datasets,
-  deepspeed,
-  evaluate,
+  # deepspeed,
+  # evaluate,
   flake8,
   isort,
   numpy,
@@ -20,9 +19,9 @@
   rich,
   sagemaker,
   scipy,
-  sklearn,
+  scikit-learn,
   tensorboard,
-  torch,
+  pytorch,
   tqdm,
   transformers,
   wandb,
@@ -34,7 +33,7 @@ buildPythonPackage rec {
     owner = "huggingface";
     repo = pname;
     rev = "refs/tags/v${version}";
-    sha256 = "";
+    sha256 = "sha256-W0tFFX+ryHUK/hRHFXY3YfrHejfPwwk5xKomwSCJJvM=";
   };
 
   propagatedBuildInputs = [
@@ -42,7 +41,7 @@ buildPythonPackage rec {
     packaging
     psutil
     pyyaml
-    torch
+    pytorch
   ];
 
   passthru.optional-dependencies = rec {
@@ -59,11 +58,11 @@ buildPythonPackage rec {
     ];
     test_dev = [
       datasets
-      evaluate
+      # evaluate
       transformers
       scipy
-      sklearn
-      deepspeed
+      scikit-learn
+      # deepspeed
       tqdm
     ];
     testing = test_prod ++ test_dev;
