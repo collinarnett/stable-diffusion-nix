@@ -28,12 +28,12 @@
 }:
 buildPythonPackage rec {
   pname = "accelerate";
-  version = "0.12.0";
+  version = "0.14.0";
   src = fetchFromGitHub {
     owner = "huggingface";
     repo = pname;
     rev = "refs/tags/v${version}";
-    sha256 = "sha256-W0tFFX+ryHUK/hRHFXY3YfrHejfPwwk5xKomwSCJJvM=";
+    sha256 = "sha256-ov/PSrqofcEDWACOHEO7NgX2oC+iWeIXHF6PXA/mXLU=";
   };
 
   propagatedBuildInputs = [

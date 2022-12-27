@@ -2,7 +2,7 @@
   description = "JupyterLab Flake for Stable Diffusion";
 
   inputs = {
-    jupyterWith.url = "github:tweag/jupyterWith";
+    jupyterWith.url = "github:tweag/jupyterWith?rev=0b7f2e843f023c89283daf53eabce322efc9ca7c";
     flake-utils.url = "github:numtide/flake-utils";
     nixgl.url = "github:guibou/nixGL";
   };
@@ -30,7 +30,7 @@
 
       iPython = pkgs.kernels.iPythonWith {
         name = "Python-env";
-        packages = p: with p; [diffusers transformers ftfy];
+        packages = p: with p; [diffusers accelerate transformers ftfy];
         ignoreCollisions = true;
       };
 
