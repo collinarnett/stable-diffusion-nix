@@ -1,3 +1,8 @@
+# ARCHIVED
+
+This repository is now no longer being maintained. The huggingface
+library `diffusers` is now included in nixpkgs.
+
 # Stable Diffusion with Nix
 
 [![NixOS
